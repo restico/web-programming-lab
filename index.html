@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>DH CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- link to your CSS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Davyd Havryliuk</h1>
@@ -55,5 +56,25 @@
         <li>CCNA: ITN, Cisco</li>
         <li>C Programming with Linux, Coursera</li>
     </ul>
+    <div id="feedback-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="https://formspree.io/f/xdkgkpwa" method="POST">
+                <label>Name:</label><br>
+                <input type="text" name="name" required><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" required><br>
+                <label>Phone Number:</label><br>
+                <input type="tel" name="phone"><br>
+                <label>Message:</label><br>
+                <textarea name="message" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div style="text-align:center; margin:20px;">
+        <button id="theme-toggle">Toggle Day/Night Mode</button>
+    </div>
+    <footer id="footer-info" style="margin-top: 50px; text-align: center; font-size: 12px;"></footer>
 </body>
 </html>
